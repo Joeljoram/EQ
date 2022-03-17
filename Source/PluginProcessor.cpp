@@ -193,10 +193,20 @@ void EQAudioProcessor::getStateInformation (juce::MemoryBlock& destData)
     // as intermediaries to make it easy to save and load complex data.
 }
 
-void EQAudioProcessor::setStateInformation (const void* data, int sizeInBytes)
+void EQAudioProcessor::setStateInformation(const void* data, int sizeInBytes)
 {
     // You should use this method to restore your parameters from this memory block,
     // whose contents will have been created by the getStateInformation() call.
+
+}
+    ChainSettings getChainSettings(juce::AudioProcessorValueTreeState & apvts)
+    {
+
+        ChainSettings;
+
+        apvts.getRawParameterValue
+
+        return Settings;
 }
 juce::AudioProcessorValueTreeState::ParameterLayout EQAudioProcessor::createParameterLayout()
 {
